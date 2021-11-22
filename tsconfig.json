@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "module": "es2015",
+        "noImplicitAny": false,
+        "outDir": "./dist/",
+        "preserveConstEnums": true,
+        "declaration": false,
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "target": "es5",
+        "baseUrl": ".",
+        "lib": [
+            "dom",
+            "es7"
+        ],
+        "paths": {
+            "@components/*": [
+                "./src/components/*"
+            ],
+            "@pages/*": [
+                "./src/pages/*"
+            ],
+            "@hooks/*": [
+                "./src/hooks/*"
+            ]
+        }
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "**/*.spec.ts",
+        "**/*.spec.tsx",
+        "node_modules"
+    ]
+}
